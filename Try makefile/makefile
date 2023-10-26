@@ -1,8 +1,9 @@
-ofile: 
-	gcc -c -fPIC math.c
+app.out : main.o math.o
+	gcc -o app.out main.o math.o 
 
-sofile:
-	gcc -shared -o libmath.so math.o
+main.o : math.h main.c
+	gcc -c -o main.o main.c
 
-exefile:
-	:gcc -o dynamic_math_example main.c -L. -lmath
+math.o : math.h math.c
+	gcc -c -o math.o math.c
+

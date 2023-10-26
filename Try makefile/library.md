@@ -18,9 +18,23 @@
 - 동적으로 로드된 라이브러리  
 => 프로그램이 라이브러리와 함꼐 함수를 호출하여 모든 권한을 갖는다.
 
-![Alt text](image.png)
+<br>
 
-### 정적 라이브러리
+|확장자명|운영체제|라이브러리 구분|
+|:---:|:---:|:---:|
+|.a|리눅스|정적|
+|.so|리눅스|동적|
+|.lib|윈도우|정적|
+|.dll|윈도우|동적|   
+
+<br>
+
+![Alt text](/Try%20makefile/images/image.png)
+
+
+
+
+### 정적 라이브러리(Static library)
 
 
 #### 특징
@@ -41,12 +55,12 @@
 - 라이브러리 업데이트가 필요한 경우, 모든 관련 프로그램을 다시 컴파일 하여야 한다.
 
 #### 실행 예시
-![Alt text](image-1.png)
+![Alt text](/Try%20makefile/images/image-1.png)
 
 
 <br>
 
-### 공유 라이브러리 (DLL : Dynamic Link Library)
+### 공유 라이브러리(Shared Library)
 
 #### 특징
 - 동적 링킹을 할 때 사용하는 라이브러리를 공유 라이브러리라 한다.
@@ -63,11 +77,11 @@
 - app을 외부에 배포할 때도 라이브러리를 포함해야 한다.
 
 #### 실행 예시
-![Alt text](image-2.png)
+![Alt text](/Try%20makefile/images/image-2.png)
 
 <br>
 
-### 동적 라이브러리
+### 동적 라이브러리(DLL : Dynamic Link Library)
 
 #### 특징
 - 정적 또는 동적 링킹이 실행 이전 또는 시작 시에 이루어지는 것과는 달리, 실행 도중에 동적으로 로딩되는 라이브러리이다.
@@ -82,4 +96,4 @@
 - 의존성 문제가 발생할 수 있으며, 필요한 라이브러리를 찾지 못할 경우 오류가 발생한다.
 
 #### 실행 예시
-![Alt text](image-3.png)
+![Alt text](/Try%20makefile/images/image-3.png)
